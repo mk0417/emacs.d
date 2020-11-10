@@ -129,7 +129,11 @@
     ns-auto-titlebar
     projectile
     counsel-projectile
-    activity-watch-mode)
+    activity-watch-mode
+    org-journal
+    org-roam
+    org-roam-server
+    org-superstar)
   "Packages to install from melpa-unstable.")
 
 (defvar melpa-stable-banned-packages nil
@@ -352,6 +356,10 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'projectile)
 (require-package 'counsel-projectile)
 (require-package 'activity-watch-mode)
+(require-package 'org-journal)
+(require-package 'org-roam)
+(require-package 'org-roam-server)
+(require-package 'org-superstar)
 
 ;; {{ Fixed expiring GNU ELPA keys
 ;; GNU ELPA GPG key will expire on Sep-2019. So we need install this package to

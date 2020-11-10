@@ -161,8 +161,8 @@
     (load (expand-file-name "~/.emacs.p/keybindings.el") t nil)
     (load (expand-file-name "~/.emacs.p/packages.el") t nil)
     (load (expand-file-name "~/.emacs.p/prog.el") t nil)
-    (load (expand-file-name "~/.emacs.p/ui.el") t nil)))
-
+    (load (expand-file-name "~/.emacs.p/ui.el") t nil)
+    (load (expand-file-name "~/.emacs.p/text.el") t nil)))
 
 ;; @see https://www.reddit.com/r/emacs/comments/55ork0/is_emacs_251_noticeably_slower_than_245_on_windows/
 ;; Emacs 25 does gc too frequently

@@ -14,7 +14,7 @@
          (shell-command-to-string fortune-prog)))))
      (t
       (concat ";; Happy hacking "
-              (or user-login-name "")
+              (or system-name "")
               " - Emacs loves you!\n\n")))))
 
 (setq-default initial-scratch-message (show-scratch-buffer-message))

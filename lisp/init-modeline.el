@@ -7,12 +7,16 @@
 (setq-default mode-line-format
   (list
     ;; the buffer name; the file name as a tool tip
-    '(:eval (propertize "%b " 'face nil 'help-echo (buffer-file-name)))
+    '(:eval (propertize " %b " 'face nil 'help-echo (buffer-file-name)))
 
     ;; line and column
-    "(" ;; '%02' to set to 2 chars at least; prevents flickering
+    " (" ;; '%02' to set to 2 chars at least; prevents flickering
     "%02l" "," "%01c"
-    ") "
+    ")  "
+
+    ;; git branch
+    '(:eval (when-let (vc vc-mode)
+              (list "Git:*" (propertize (substring vc 5)) "*  ")))
 
     ;; @see https://www.gnu.org/software/emacs/manual/html_node/emacs/Help-Echo.html
     "["
@@ -43,7 +47,7 @@
     ;; is this buffer read-only?
     '(:eval (when buffer-read-only
               (concat ","  (propertize "RO" 'face nil 'help-echo "Buffer is read-only"))))
-    "] "
+    "]  "
 
     ;;global-mode-string, org-timer-set-timer in org-mode need this
     (propertize "%M" 'face nil)

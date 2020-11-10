@@ -124,7 +124,12 @@
     workgroups2
     zoutline
     company-c-headers
-    company-statistics)
+    company-statistics
+    jupyter
+    ns-auto-titlebar
+    projectile
+    counsel-projectile
+    activity-watch-mode)
   "Packages to install from melpa-unstable.")
 
 (defvar melpa-stable-banned-packages nil
@@ -300,11 +305,11 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'company-c-headers)
 (require-package 'company-statistics)
 (if *emacs26* (require-package 'lsp-mode))
-(require-package 'elpy)
+;; (require-package 'elpy)
 (require-package 'legalese)
 (require-package 'simple-httpd)
 ;; (require-package 'git-gutter) ; use my patched version
-(require-package 'neotree)
+;; (require-package 'neotree)
 (require-package 'hydra)
 (require-package 'ivy-hydra) ; @see https://oremacs.com/2015/07/23/ivy-multiaction/
 (require-package 'web-mode)
@@ -342,6 +347,11 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'pyim)
 (require-package 'pyim-wbdict) ; someone may use wubi IME, not me
 (require-package 'esup)
+(require-package 'jupyter)
+(require-package 'ns-auto-titlebar)
+(require-package 'projectile)
+(require-package 'counsel-projectile)
+(require-package 'activity-watch-mode)
 
 ;; {{ Fixed expiring GNU ELPA keys
 ;; GNU ELPA GPG key will expire on Sep-2019. So we need install this package to

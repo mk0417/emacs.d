@@ -308,7 +308,7 @@ If the character before and after CH is space or tab, CH is NOT slash"
 
 (define-key evil-normal-state-map "Y" (kbd "y$"))
 ;; (define-key evil-normal-state-map (kbd "RET") 'ivy-switch-buffer-by-pinyin) ; RET key is preserved for occur buffer
-(define-key evil-normal-state-map "go" 'goto-char)
+;; (define-key evil-normal-state-map "go" 'goto-char)
 (define-key evil-normal-state-map (kbd "C-]") 'counsel-etags-find-tag-at-point)
 (define-key evil-visual-state-map (kbd "C-]") 'counsel-etags-find-tag-at-point)
 (define-key evil-insert-state-map (kbd "C-x C-n") 'evil-complete-next-line)
@@ -514,7 +514,7 @@ If INCLUSIVE is t, the text object is inclusive."
   "bu" 'backward-up-list
   "bb" (lambda () (interactive) (switch-to-buffer nil)) ; to previous buffer
   "ef" 'end-of-defun
-  "m" 'evil-set-marker
+  ; "m" 'evil-set-marker
   "em" 'shellcop-erase-buffer
   "eb" 'eval-buffer
   "sc" 'scratch
@@ -693,8 +693,8 @@ If INCLUSIVE is t, the text object is inclusive."
 
 ;; Please check "init-ediff.el" which contains `my-space-leader-def' code too
 (my-space-leader-def
-  "n" 'my-goto-next-hunk
-  "p" 'my-goto-previous-hunk
+  ; "n" 'my-goto-next-hunk
+  ; "p" 'my-goto-previous-hunk
   "ch" 'my-dired-redo-from-commands-history
   "dd" 'pwd
   "mm" 'counsel-evil-goto-global-marker
@@ -710,7 +710,7 @@ If INCLUSIVE is t, the text object is inclusive."
   "hh" 'random-healthy-color-theme
   "yy" 'hydra-launcher/body
   "ii" 'my-toggle-indentation
-  "g" 'hydra-git/body
+  ; "g" 'hydra-git/body
   "ur" 'gud-remove
   "ub" 'gud-break
   "uu" 'gud-run

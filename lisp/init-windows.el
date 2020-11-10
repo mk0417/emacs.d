@@ -87,7 +87,7 @@
       (define-key map (kbd "M-0") 'winum-select-window-0-or-10)
       (define-key map (kbd "M-1") 'winum-select-window-1)
       (define-key map (kbd "M-2") 'winum-select-window-2)
-      (define-key map (kbd "M-3") 'winum-select-window-3)
+      ;; (define-key map (kbd "M-3") 'winum-select-window-3)
       (define-key map (kbd "M-4") 'winum-select-window-4)
       (define-key map (kbd "M-5") 'winum-select-window-5)
       (define-key map (kbd "M-6") 'winum-select-window-6)
@@ -96,7 +96,7 @@
       map))
 
 (with-eval-after-load 'winum
-  (setq winum-format "%s")
+  (setq winum-format " %s ")
   (setq winum-mode-line-position 0)
   (set-face-attribute 'winum-face nil :foreground "DeepPink" :underline "DeepPink" :weight 'bold))
 ;; }}

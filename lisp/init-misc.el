@@ -158,8 +158,8 @@ This function can be re-used by other major modes after compilation."
   (unless (is-buffer-file-temp)
 
     (unless (featurep 'esup-child)
-      (my-ensure 'lazyflymake)
-      (lazyflymake-start)
+      ;; (my-ensure 'lazyflymake)
+      ;; (lazyflymake-start)
 
       (my-ensure 'wucuo)
       (wucuo-start))

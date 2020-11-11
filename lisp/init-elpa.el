@@ -133,7 +133,8 @@
     org-journal
     org-roam
     org-roam-server
-    org-superstar)
+    org-superstar
+    spell-fu)
   "Packages to install from melpa-unstable.")
 
 (defvar melpa-stable-banned-packages nil
@@ -360,6 +361,7 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'org-roam)
 (require-package 'org-roam-server)
 (require-package 'org-superstar)
+(require-package 'spell-fu)
 
 ;; {{ Fixed expiring GNU ELPA keys
 ;; GNU ELPA GPG key will expire on Sep-2019. So we need install this package to

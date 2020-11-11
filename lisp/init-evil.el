@@ -762,9 +762,9 @@ If INCLUSIVE is t, the text object is inclusive."
   ";" 'ace-pinyin-jump-char-2
   "w" 'avy-goto-word-or-subword-1
   "a" 'avy-goto-char-timer
-  "db" 'sdcv-search-input ; details
-  "dt" 'sdcv-search-input+ ; summary
-  "dd" 'my-lookup-dict-org
+  ;; "db" 'sdcv-search-input ; details
+  ;; "dt" 'sdcv-search-input+ ; summary
+  ;; "dd" 'my-lookup-dict-org
   "mm" 'lookup-doc-in-man
   "gg" 'w3m-google-search
   "gd" 'w3m-search-financial-dictionary

@@ -70,3 +70,5 @@ elpy/
 package-quickstart.el
 .lsp-session*
 /spell-fu
+bookmarks
+projects

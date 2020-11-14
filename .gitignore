@@ -72,3 +72,4 @@ package-quickstart.el
 /spell-fu
 bookmarks
 projects
+.DS_Store

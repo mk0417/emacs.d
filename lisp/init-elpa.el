@@ -131,6 +131,8 @@
     counsel-projectile
     activity-watch-mode
     ;; spell-fu
+    eacl
+    counsel-etags
     latex-preview-pane
     org-journal
     org-roam
@@ -364,6 +366,8 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'org-superstar)
 ;; (require-package 'spell-fu)
 (require-package 'latex-preview-pane)
+(require-package 'counsel-etags)
+(require-package 'eacl)
 
 ;; {{ Fixed expiring GNU ELPA keys
 ;; GNU ELPA GPG key will expire on Sep-2019. So we need install this package to

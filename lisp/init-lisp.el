@@ -15,7 +15,7 @@
      (t
       (concat ";; Happy hacking "
               (or system-name "")
-              " - Emacs loves you!\n\n")))))
+              " - Welcome to Emacs!\n\n")))))
 
 (setq-default initial-scratch-message (show-scratch-buffer-message))
 

@@ -14,6 +14,12 @@
     "%02l" "," "%01c"
     ")  "
 
+    ;; relative position, size of file
+    (propertize "%p") ;; % above top
+    "/"
+    (propertize "%I") ;; size
+    "  "
+
     ;; git branch
     '(:eval (when-let (vc vc-mode)
               (list "Git:*" (propertize (substring vc 5)) "*  ")))

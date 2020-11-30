@@ -132,6 +132,7 @@
     counsel-projectile
     activity-watch-mode
     ;; spell-fu
+    ivy-rich
     eacl
     counsel-etags
     latex-preview-pane
@@ -369,6 +370,7 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'latex-preview-pane)
 (require-package 'counsel-etags)
 (require-package 'eacl)
+(require-package 'ivy-rich)
 
 ;; {{ Fixed expiring GNU ELPA keys
 ;; GNU ELPA GPG key will expire on Sep-2019. So we need install this package to

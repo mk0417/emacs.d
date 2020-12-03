@@ -6,6 +6,9 @@
 ;; use setq-default to set it for /all/ modes
 (setq-default mode-line-format
   (list
+    ;; evil state indicator
+    '(:eval (propertize evil-mode-line-tag))
+
     ;; the buffer name; the file name as a tool tip
     '(:eval (propertize " %b " 'face nil 'help-echo (buffer-file-name)))
 

@@ -98,7 +98,8 @@
 (with-eval-after-load 'winum
   (setq winum-format " %s ")
   (setq winum-mode-line-position 0)
-  (set-face-attribute 'winum-face nil :foreground "DeepPink" :underline "DeepPink" :weight 'bold))
+  ;; (set-face-attribute 'winum-face nil :foreground "DeepPink" :underline "DeepPink" :weight 'bold)
+  (set-face-attribute 'winum-face nil :underline t :weight 'bold))
 ;; }}
 (winum-mode 1)
 

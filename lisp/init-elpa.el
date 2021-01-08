@@ -59,9 +59,10 @@
     undo-tree
     js-doc
     ;; {{ since stable v0.13.0 released, we go back to stable version
-    ;; ivy
-    ;; counsel
-    ;; swiper
+    ;; I would like to use new version
+    ivy
+    counsel
+    swiper
     ;; }}
     wgrep
     ;; {{ themes in melpa unstable
@@ -69,7 +70,6 @@
     molokai-theme
     spacemacs-theme
     leuven-theme
-    elpy ; use latest elpy since Python package API changes
     sublime-themes
     tangotango-theme
     darkburn-theme
@@ -96,6 +96,7 @@
     distinguished-theme
     tao-theme
     ;; }}
+    elpy ; use latest elpy since Python package API changes
     groovy-mode
     company ; I won't wait another 2 years for stable
     simple-httpd
@@ -132,7 +133,9 @@
     counsel-projectile
     activity-watch-mode
     ;; spell-fu
-    ;; ivy-rich ;; void variable issue (version: 20201125), so move it ot stable version
+    ;; void variable issue (version: 20201125), so move it ot stable version
+    ;; most recent version has no issue
+    ivy-rich
     popwin
     eacl
     counsel-etags
@@ -371,7 +374,9 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'latex-preview-pane)
 (require-package 'counsel-etags)
 (require-package 'eacl)
-;; (require-package 'ivy-rich) ;; void variable issue (version: 20201125), so move it ot stable version
+;; void variable issue (version: 20201125), so move it ot stable version
+;; most recent version has no issue
+(require-package 'ivy-rich)
 (require-package 'popwin)
 
 ;; {{ Fixed expiring GNU ELPA keys

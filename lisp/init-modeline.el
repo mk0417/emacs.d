@@ -25,7 +25,7 @@
 
     ;; git branch
     '(:eval (when-let (vc vc-mode)
-              (list "Git:*" (propertize (substring vc 5)) "*  ")))
+              (list "Git:*" (propertize (substring vc 5) 'face "black") "*  ")))
 
     ;; @see https://www.gnu.org/software/emacs/manual/html_node/emacs/Help-Echo.html
     "["

@@ -133,6 +133,7 @@
     counsel-projectile
     activity-watch-mode
     evil-goggles
+    modus-themes
     ;; spell-fu
     ;; void variable issue (version: 20201125), so move it ot stable version
     ;; most recent version has no issue
@@ -155,7 +156,7 @@
 (setq package-archives
       '(
         ;; uncomment below line if you need use GNU ELPA
-        ;; ("gnu" . "https://elpa.gnu.org/packages/")
+        ("gnu" . "https://elpa.gnu.org/packages/")
         ("melpa" . "https://melpa.org/packages/")
         ("melpa-stable" . "https://stable.melpa.org/packages/")
 
@@ -380,6 +381,7 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'ivy-rich)
 (require-package 'popwin)
 (require-package 'evil-goggles)
+(require-package 'modus-themes)
 
 ;; {{ Fixed expiring GNU ELPA keys
 ;; GNU ELPA GPG key will expire on Sep-2019. So we need install this package to

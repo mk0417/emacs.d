@@ -138,6 +138,7 @@
     evil-goggles
     modus-themes
     code-cells
+    crux
     ;; spell-fu
     ;; void variable issue (version: 20201125), so move it ot stable version
     ;; most recent version has no issue
@@ -387,6 +388,7 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'evil-goggles)
 (require-package 'modus-themes)
 (require-package 'code-cells)
+(require-package 'crux)
 
 ;; {{ Fixed expiring GNU ELPA keys
 ;; GNU ELPA GPG key will expire on Sep-2019. So we need install this package to
